@@ -10,8 +10,7 @@ int main(int argc, char** argv) {
 	
 	TList list;
 	char cmd[255]/* arg*/;
-	do
-	{
+	do {
 		
 		std::cout<<" ' + ' - add item "<<std::endl;
 		std::cout<<" ' - ' - delete item "<<std::endl;
@@ -19,7 +18,7 @@ int main(int argc, char** argv) {
 		std::cout<<" ' q ' - exit "<<std::endl;
 		std::cout<<"Enter command"<<std::endl;
 		std::cout<<"Enter kind of figure:"<<std::endl;
-					std::cout<<"p - pryam"<<std::endl;
+					std::cout<<"r - romb"<<std::endl;
 						std::cout<<"t-trap"<<std::endl;
 							std::cout<<"k-kvad"<<std::endl;
 		std::cin>>cmd;
@@ -42,10 +41,10 @@ int main(int argc, char** argv) {
 			}
 
 			
-			if(cmd[1]=='p')
+			if(cmd[1]=='r')
 			{
 			Romb a; 
-			std::cout<<"Enter side"<<std::endl;
+			std::cout<<"Enter diags"<<std::endl;
 			
 			std::cin>>a;
 			std::cout<<"Enter position"<<std::endl;
@@ -58,7 +57,7 @@ int main(int argc, char** argv) {
 			if(cmd[1]=='t')
 			{
 			Trape a; 
-			std::cout<<"Enter side"<<std::endl;
+			std::cout<<"Enter two sides and high"<<std::endl;
 			
 			std::cin>>a;
 			std::cout<<"Enter position"<<std::endl;
